@@ -26,6 +26,9 @@ TARGET_SCREEN_WIDTH := 1600
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
 
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
