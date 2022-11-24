@@ -399,8 +399,6 @@ vendor/etc/ltm_config_xiaomi_35_02_0b_video_mode_dual_dsi_cphy_panel.xml
 vendor/etc/ltm_config_xiaomi_42_02_0a_video_mode_dual_dsi_cphy_panel.xml
 vendor/etc/mdss_dsi_k81_35_02_0b_dual_cphy_video_mi.xml
 vendor/etc/mdss_dsi_k81_42_02_0a_dual_cphy_video_mi.xml
-vendor/etc/qdcm_calib_data_xiaomi_35_02_0b_video_mode_dual_dsi_cphy_panel.xml
-vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_video_mode_dual_dsi_cphy_panel.xml
 vendor/etc/tunings.txt
 
 # Fingerprint
