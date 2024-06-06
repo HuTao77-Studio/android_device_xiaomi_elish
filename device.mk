@@ -76,5 +76,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_CHARACTERISTICS := tablet
 TARGET_IS_TABLET := true
 
+# Touchfeature
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.touchfeature@1.0.vendor
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.touchfeature.type=43
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/elish/elish-vendor.mk)
