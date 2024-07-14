@@ -36,6 +36,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
+# Mlipay
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay.so \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay@1.1.so
+
+PRODUCT_PACKAGES += \
+    manifest_vendor.xiaomi.hardware.mlipay \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor \
+    vendor.xiaomi.hardware.mtdservice@1.2.vendor
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -51,6 +63,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# SoterService
+PRODUCT_PACKAGES += \
+    SoterService
 
 # Tablet
 PRODUCT_CHARACTERISTICS := tablet
