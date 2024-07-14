@@ -23,6 +23,10 @@ TARGET_KERNEL_CONFIG += vendor/xiaomi/elish.config
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := elish
 
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Sepolicy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
