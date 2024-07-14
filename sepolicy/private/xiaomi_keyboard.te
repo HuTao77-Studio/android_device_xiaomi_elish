@@ -1,0 +1,4 @@
+type sysfs_xiaomi_keyboard, sysfs_type, fs_type;
+
+allow devicesettings_app hal_touchfeature_xiaomi_hwservice:hwservice_manager find;
+allow devicesettings_app sysfs_xiaomi_keyboard:file rw_file_perms;

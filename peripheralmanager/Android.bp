@@ -1,0 +1,24 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "XiaomiPeripheralManager",
+    defaults: [
+        "SettingsLibDefaults",
+    ],
+
+    certificate: "platform",
+    srcs: ["src/**/*.java"],
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+    resource_dirs: ["res"],
+    static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
+        "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature-V1.0-java",
+    ],
+}
