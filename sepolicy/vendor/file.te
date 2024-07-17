@@ -1,0 +1,8 @@
+# Airoha
+type airoha_data_file, data_file_type, file_type;
+
+type anld_socket_file, file_type;
+
+type airoha_mock_gps, dev_type;
+
+type gps_device, dev_type;
