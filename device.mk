@@ -45,10 +45,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.1.vendor
 
-# Keyboard
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/Xiaomi_Keyboard.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/Xiaomi_Keyboard.idc
-
 # Mlipay
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
